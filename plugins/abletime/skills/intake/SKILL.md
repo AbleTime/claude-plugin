@@ -2,10 +2,10 @@
 name: intake
 description: File a report onto a project and stamp the named source. Use for intake, cron errors, log alerts, cloud-agent filing, or when a failure needs a task.
 allowed-tools:
-  - mcp__plugin_abletime_full__notify
-  - mcp__plugin_abletime_full__orientation
-  - mcp__plugin_abletime_full__list_projects
-  - mcp__plugin_abletime_full__create_task
+  - mcp__plugin_abletime_plugins__notify
+  - mcp__plugin_abletime_plugins__orientation
+  - mcp__plugin_abletime_plugins__list_projects
+  - mcp__plugin_abletime_plugins__create_task
 ---
 
 # Intake

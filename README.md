@@ -1,17 +1,16 @@
 # AbleTime for Claude
 
-Official AbleTime plugin for Claude Code. Installs two MCP servers and the customer recording rules so agents can track time, run the board, and read reports without hand-wiring MCP.
+Official AbleTime plugin for Claude Code. Installs one MCP server and the customer recording rules so agents can track time, run the board, and read reports without hand-wiring MCP.
 
 Homepage: [https://www.abletime.com](https://www.abletime.com)
 
 ## What you get
 
-Two HTTP MCP servers on `https://track.abletime.com`:
+One HTTP MCP server on `https://track.abletime.com`:
 
 | Server | URL | Role |
 | --- | --- | --- |
-| **full** | `https://track.abletime.com/api/public/v2/mcp/full` | Time and the board |
-| **reports** | `https://track.abletime.com/api/public/v2/mcp/reports` | Reports. Its own connection. Not on `/mcp/full`. |
+| **plugins** | `https://track.abletime.com/api/public/v2/mcp/plugins` | Time, the board and reports |
 
 Also included:
 
@@ -25,11 +24,9 @@ Also included:
 
 Watches persist in `~/.abletime/watches.json` (user-local, not in the repo).
 
-## Reports endpoint
+## Reports
 
-`https://track.abletime.com/api/public/v2/mcp/reports`
-
-This is a second MCP server. You authenticate it on its own, the same way as the first. `/mcp/full` does not serve it.
+Reports come over the same connection.
 
 The tool is `get_report`. It takes a date range and, optionally, which reports to draw by name or by code (`AT-001` upward). The answer is the share link: a stub, a keycode, when the link expires, and a reader path on the same host, `/r/{stub}?key={keycode}`. The page opens without signing in. The link lasts fourteen days. The numbers behind the page are not in the answer unless `includeData` is set.
 
@@ -37,7 +34,7 @@ An owner or admin reads the whole organization, including money. A manager reads
 
 ## Auth (Claude Code)
 
-Claude Code authenticates with **OAuth**. AbleTime answers unauthenticated MCP calls with a 401 that includes protected-resource metadata. Run `/mcp`, choose the server, and complete sign-in in the browser — once for `full` and once for `reports`.
+Claude Code authenticates with **OAuth**. AbleTime answers unauthenticated MCP calls with a 401 that includes protected-resource metadata. Run `/mcp`, choose `plugins`, and complete sign-in in the browser — once.
 
 Do **not** put a PAT or `Authorization` header in `.mcp.json`. A personal access token is an AbleTime credential for other clients (scripts, other tools). It is not the Claude Code install path.
 
@@ -67,7 +64,7 @@ After editing files in the clone, run `/reload-plugins` in the session.
 npm test
 ```
 
-Runs `scripts/validate-plugin.mjs` — checks manifest fields, the two live MCP URLs and their `http` type, no auth headers or variable substitution in `.mcp.json`, the recording rules file, required frontmatter on skills, and hook wiring.
+Runs `scripts/validate-plugin.mjs` — checks manifest fields, the live MCP URL and its `http` type, no auth headers or variable substitution in `.mcp.json`, the recording rules file, required frontmatter on skills, and hook wiring.
 
 ```bash
 claude plugin validate .

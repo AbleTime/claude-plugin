@@ -2,11 +2,11 @@
 name: sorting-hat
 description: Set priority, assignee, and category on tasks. Use for sorting hat, triage, intake follow-up, or when tasks need assignment or priority.
 allowed-tools:
-  - mcp__plugin_abletime_full__notify
-  - mcp__plugin_abletime_full__get_task
-  - mcp__plugin_abletime_full__set_task_priority
-  - mcp__plugin_abletime_full__set_task_assignee
-  - mcp__plugin_abletime_full__update_task
+  - mcp__plugin_abletime_plugins__notify
+  - mcp__plugin_abletime_plugins__get_task
+  - mcp__plugin_abletime_plugins__set_task_priority
+  - mcp__plugin_abletime_plugins__set_task_assignee
+  - mcp__plugin_abletime_plugins__update_task
 ---
 
 # Sorting hat

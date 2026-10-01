@@ -2,11 +2,11 @@
 name: watch
 description: Poll via MCP for tasks assigned to me or landing in a named stage, and notify on a hit. Use for watch, notify, assigned to me, stage landing, /abletime:watch, or "let me know when a task lands in a stage."
 allowed-tools:
-  - mcp__plugin_abletime_full__notify
-  - mcp__plugin_abletime_full__orientation
-  - mcp__plugin_abletime_full__list_tasks
-  - mcp__plugin_abletime_full__get_project
-  - mcp__plugin_abletime_full__tool_schema
+  - mcp__plugin_abletime_plugins__notify
+  - mcp__plugin_abletime_plugins__orientation
+  - mcp__plugin_abletime_plugins__list_tasks
+  - mcp__plugin_abletime_plugins__get_project
+  - mcp__plugin_abletime_plugins__tool_schema
   - Read(~/.abletime/watches.json)
   - Edit(~/.abletime/watches.json)
   - CronList

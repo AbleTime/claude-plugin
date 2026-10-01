@@ -2,24 +2,24 @@
 name: board
 description: Work epics, milestones, comments, schedule, dependency, block, and lock on the AbleTime board. Use when the person asks for one of those, not for priority, assignee, or category.
 allowed-tools:
-  - mcp__plugin_abletime_full__get_task
-  - mcp__plugin_abletime_full__get_epic
-  - mcp__plugin_abletime_full__get_milestone
-  - mcp__plugin_abletime_full__list_epics
-  - mcp__plugin_abletime_full__create_epic
-  - mcp__plugin_abletime_full__update_epic
-  - mcp__plugin_abletime_full__set_epic_state
-  - mcp__plugin_abletime_full__delete_epic
-  - mcp__plugin_abletime_full__list_milestones
-  - mcp__plugin_abletime_full__create_milestone
-  - mcp__plugin_abletime_full__update_milestone
-  - mcp__plugin_abletime_full__delete_milestone
-  - mcp__plugin_abletime_full__create_comment
-  - mcp__plugin_abletime_full__set_task_schedule
-  - mcp__plugin_abletime_full__clear_task_schedule
-  - mcp__plugin_abletime_full__set_task_dependency
-  - mcp__plugin_abletime_full__set_task_blocked
-  - mcp__plugin_abletime_full__set_task_locked
+  - mcp__plugin_abletime_plugins__get_task
+  - mcp__plugin_abletime_plugins__get_epic
+  - mcp__plugin_abletime_plugins__get_milestone
+  - mcp__plugin_abletime_plugins__list_epics
+  - mcp__plugin_abletime_plugins__create_epic
+  - mcp__plugin_abletime_plugins__update_epic
+  - mcp__plugin_abletime_plugins__set_epic_state
+  - mcp__plugin_abletime_plugins__delete_epic
+  - mcp__plugin_abletime_plugins__list_milestones
+  - mcp__plugin_abletime_plugins__create_milestone
+  - mcp__plugin_abletime_plugins__update_milestone
+  - mcp__plugin_abletime_plugins__delete_milestone
+  - mcp__plugin_abletime_plugins__create_comment
+  - mcp__plugin_abletime_plugins__set_task_schedule
+  - mcp__plugin_abletime_plugins__clear_task_schedule
+  - mcp__plugin_abletime_plugins__set_task_dependency
+  - mcp__plugin_abletime_plugins__set_task_blocked
+  - mcp__plugin_abletime_plugins__set_task_locked
 ---
 
 # Board

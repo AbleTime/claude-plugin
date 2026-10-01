@@ -2,8 +2,8 @@
 name: bugfix
 description: Apply a fix for a task and open a pull request. Use for bugfix, issue fix, or when a task should become a PR.
 allowed-tools:
-  - mcp__plugin_abletime_full__notify
-  - mcp__plugin_abletime_full__get_task
+  - mcp__plugin_abletime_plugins__notify
+  - mcp__plugin_abletime_plugins__get_task
 ---
 
 # Bugfix

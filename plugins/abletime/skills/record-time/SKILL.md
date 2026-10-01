@@ -2,13 +2,13 @@
 name: record-time
 description: Record AbleTime drafts, keep an open entry current, and create a task when the work needs one. Use when recording time, opening or updating drafts, creating a task the work belongs to, or refreshing minutes and description on an open entry.
 allowed-tools:
-  - mcp__plugin_abletime_full__orientation
-  - mcp__plugin_abletime_full__accept_entry
-  - mcp__plugin_abletime_full__refresh_feeds
-  - mcp__plugin_abletime_full__upsert_entry
-  - mcp__plugin_abletime_full__update_entry
-  - mcp__plugin_abletime_full__list_entries
-  - mcp__plugin_abletime_full__create_task
+  - mcp__plugin_abletime_plugins__orientation
+  - mcp__plugin_abletime_plugins__accept_entry
+  - mcp__plugin_abletime_plugins__refresh_feeds
+  - mcp__plugin_abletime_plugins__upsert_entry
+  - mcp__plugin_abletime_plugins__update_entry
+  - mcp__plugin_abletime_plugins__list_entries
+  - mcp__plugin_abletime_plugins__create_task
 ---
 
 # Record time

@@ -1,12 +1,8 @@
 {
   "mcpServers": {
-    "full": {
+    "plugins": {
       "type": "http",
-      "url": "https://track.abletime.com/api/public/v2/mcp/full"
-    },
-    "reports": {
-      "type": "http",
-      "url": "https://track.abletime.com/api/public/v2/mcp/reports"
+      "url": "https://track.abletime.com/api/public/v2/mcp/plugins"
     }
   }
 }
