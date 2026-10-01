@@ -1,0 +1,14 @@
+{
+  "name": "abletime",
+  "owner": {
+    "name": "AbleTime"
+  },
+  "description": "Official AbleTime plugins for Claude",
+  "plugins": [
+    {
+      "name": "abletime",
+      "source": "./plugins/abletime",
+      "description": "Record time and run the AbleTime board from Claude."
+    }
+  ]
+}

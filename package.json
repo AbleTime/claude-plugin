@@ -1,0 +1,10 @@
+{
+  "name": "abletime-claude-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official AbleTime plugin for Claude",
+  "license": "MIT",
+  "scripts": {
+    "test": "node scripts/validate-plugin.mjs"
+  }
+}

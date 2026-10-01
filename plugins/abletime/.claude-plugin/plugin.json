@@ -1,0 +1,11 @@
+{
+  "name": "abletime",
+  "displayName": "AbleTime",
+  "version": "1.0.0",
+  "description": "Record time and run the AbleTime board from Claude.",
+  "author": { "name": "AbleTime" },
+  "homepage": "https://www.abletime.com",
+  "repository": "https://github.com/AbleTime/claude-plugin",
+  "license": "MIT",
+  "keywords": ["abletime", "time-tracking", "project-management", "mcp"]
+}
